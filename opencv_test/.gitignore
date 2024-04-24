@@ -22,3 +22,6 @@ Makefile
 
 # 忽略编译生成的文件夹
 tmp/
+
+# 忽略可执行文件
+opencv_test
