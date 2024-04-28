@@ -30,3 +30,15 @@ boostdesc_bgm.i文件缺失
 安装位于/opt/Qt5.12.8/5.12.8/gcc_64/bin/qmake
 ```
 
+
+
+### 首次编译说明
+
+```
+client和server目录下，各有env_setting和make.sh
+首次编译执行make.sh即可，编译前先查看env_setting
+client目录中的env_setting是设置交叉编译工具，用于开发板运行
+server目录中的env_setting是设置服务端在ubuntu上的运行环境
+编译无法通过请查看qmake的目录是否正确，修改make.sh中的qmake目录，可写成绝对路径
+```
+
