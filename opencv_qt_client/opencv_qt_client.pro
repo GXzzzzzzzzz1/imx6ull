@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,14 +16,27 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    camera.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    tcpclient.cpp
 
 HEADERS += \
-    mainwindow.h
+    camera.h \
+    mainwindow.h \
+    tcpclient.h
 
 FORMS += \
     mainwindow.ui
+
+INCLUDEPATH += /home/book/opencv-3.4.9/install/include
+LIBS += /home/book/opencv-3.4.9/install/lib/libopencv_core.so \
+    /home/book/opencv-3.4.9/install/lib/libopencv_highgui.so \
+    /home/book/opencv-3.4.9/install/lib/libopencv_imgproc.so \
+    /home/book/opencv-3.4.9/install/lib/libopencv_videoio.so \
+    /home/book/opencv-3.4.9/install/lib/libopencv_imgcodecs.so \
+    /home/book/opencv-3.4.9/install/lib/libopencv_objdetect.so
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
