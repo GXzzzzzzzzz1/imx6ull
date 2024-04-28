@@ -1,6 +1,8 @@
 # This file is used to ignore files which are generated
 # ----------------------------------------------------------------------------
 
+opencv_qt_client
+moc_predefs.h
 *~
 *.autosave
 *.a
