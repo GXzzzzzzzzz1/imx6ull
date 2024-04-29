@@ -19,8 +19,12 @@
 [https://blog.csdn.net/qq_26943851/article/details/104434130]
 [https://blog.csdn.net/ezhchai/article/details/80557936]
 
+#seetaface
+[https://github.com/seetafaceengine/SeetaFace2]
+
 #注意说明
 我是根据正点原子的教程来编译的，后面发现需要添加opencv_contrib库，所以在cmake-gui中额外添加了OPENCV_EXTRA_MODULES_PATH指定opencv_contrib源码中module的地址，重新编译
+最终使用opencv检测人脸，seetaface2来识别人脸，没有使用到opencv_contrib
 
 #编译出现的问题
 cuba.hpp头文件丢失
